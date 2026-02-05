@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wawan - Backend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Wawan, Backend Developer specializing in PHP, Golang, and system architecture">
+    
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=block');
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="edition-label">VOL. 1</span>
+                    <h1 class="logo-name">WAWAN</h1>
+                    <span class="edition-label">2025 EDITION</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#skills" class="nav-link">SKILLS</a>
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                    <a href="#experience" class="nav-link">EXPERIENCE</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <a href="#about" class="mobile-nav-link">ABOUT</a>
+            <a href="#skills" class="mobile-nav-link">SKILLS</a>
+            <a href="#projects" class="mobile-nav-link">PROJECTS</a>
+            <a href="#experience" class="mobile-nav-link">EXPERIENCE</a>
+            <a href="#contact" class="mobile-nav-link">CONTACT</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero newsprint-texture">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-label">BACKEND DEVELOPER • UIN ALAUDDIN MAKASSAR</p>
+                    <h1 class="hero-title">Building Robust Systems, One Line at a Time</h1>
+                    <p class="hero-description">
+                        Mahasiswa Teknik Informatika semester akhir dengan passion dalam membangun website dan sistem yang scalable. Suka ngoding dan lagi senang vibecoding.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">PROJECTS</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">YEARS EXP</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">INTERNSHIPS</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">GET IN TOUCH</a>
+                        <a href="#projects" class="btn btn-secondary">VIEW PROJECTS</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-box">
+                        <div class="profile-initial">W</div>
+                        <div class="profile-label">BACKEND DEVELOPER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker">
+        <div class="ticker-content" id="tickerContent">
+            <span class="ticker-item">● PHP</span>
+            <span class="ticker-item">● GOLANG</span>
+            <span class="ticker-item">● MYSQL</span>
+            <span class="ticker-item">● DOCKER</span>
+            <span class="ticker-item">● LARAVEL</span>
+            <span class="ticker-item">● REST API</span>
+            <span class="ticker-item">● BACKEND ARCHITECTURE</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="drop-cap-text">
+                        <span class="drop-cap">S</span>ebagai mahasiswa Teknik Informatika semester akhir di UIN Alauddin Makassar, saya fokus pada pengembangan backend systems yang robust dan scalable. Perjalanan saya dimulai dari ketertarikan mendalam terhadap bagaimana data flows dan system architecture bekerja di balik layar.
+                    </p>
+                    <p class="body-text">
+                        Dengan pengalaman membangun berbagai website dan API systems, saya telah berkontribusi dalam proyek-proyek seperti sistem akademik kampus, e-commerce backend, dan company profile websites. Saat ini sedang menyelesaikan skripsi tentang RAG (Retrieval-Augmented Generation), mengeksplorasi intersection antara backend development dan AI technologies.
+                    </p>
+                    <p class="body-text">
+                        Saya percaya bahwa good code adalah kombinasi antara clean architecture, efficient performance, dan maintainability. When I'm not coding, saya suka vibecoding sambil eksplorasi teknologi baru dan best practices dalam software development.
+                    </p>
+                </div>
+                <div class="about-sidebar">
+                    <div class="info-box">
+                        <h3 class="info-title">QUICK FACTS</h3>
+                        <dl class="info-list">
+                            <dt>LOCATION</dt>
+                            <dd>Makassar, Indonesia</dd>
+                            <dt>EDUCATION</dt>
+                            <dd>UIN Alauddin Makassar</dd>
+                            <dt>MAJOR</dt>
+                            <dd>Teknik Informatika</dd>
+                            <dt>STATUS</dt>
+                            <dd>Final Year Student</dd>
+                            <dt>FOCUS</dt>
+                            <dd>Backend Development</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3 class="skill-title">LANGUAGES</h3>
+                    <ul class="skill-list">
+                        <li>PHP</li>
+                        <li>Golang</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3 class="skill-title">FRAMEWORKS</h3>
+                    <ul class="skill-list">
+                        <li>Laravel</li>
+                        <li>Gin (Golang)</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    </div>
+                    <h3 class="skill-title">DATABASE</h3>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3 class="skill-title">TOOLS & DEVOPS</h3>
+                    <ul class="skill-list">
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>Postman</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.1</span>
+                        <span class="project-tag">API DEVELOPMENT</span>
+                    </div>
+                    <h3 class="project-title">E-Commerce API Backend</h3>
+                    <p class="project-description">
+                        Complete backend system for e-commerce platform with integrated payment gateway. Implemented RESTful API architecture dengan authentication, product management, dan transaction processing.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Payment Gateway</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.2</span>
+                        <span class="project-tag">GOLANG</span>
+                    </div>
+                    <h3 class="project-title">Kasir API System</h3>
+                    <p class="project-description">
+                        Point of Sale (POS) API system built with Golang untuk managing transactions, inventory, dan sales reporting. Fokus pada performance dan concurrent request handling.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Golang</span>
+                        <span class="tech-tag">Gin</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.3</span>
+                        <span class="project-tag">WEB DEVELOPMENT</span>
+                    </div>
+                    <h3 class="project-title">MyLab Company Profile</h3>
+                    <p class="project-description">
+                        Corporate website development untuk MyLab dengan custom CMS, dynamic content management, dan responsive design. Implemented SEO best practices dan optimized performance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">CMS</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.4</span>
+                        <span class="project-tag">PORTFOLIO</span>
+                    </div>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        Self-designed portfolio website showcasing projects dan technical skills. Built with modern web technologies dan deployed on GitHub Pages.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.5</span>
+                        <span class="project-tag">ACADEMIC SYSTEM</span>
+                    </div>
+                    <h3 class="project-title">Sistem Akademik Kampus UIN</h3>
+                    <p class="project-description">
+                        Academic management system untuk UIN Alauddin Makassar. Features include student enrollment, grade management, course scheduling, dan reporting system untuk administrasi kampus.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Role-Based Access</span>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card project-card-featured">
+                    <div class="project-header">
+                        <span class="project-number">FIG. 1.6</span>
+                        <span class="project-tag featured-tag">THESIS PROJECT</span>
+                    </div>
+                    <h3 class="project-title">RAG Implementation Research</h3>
+                    <p class="project-description">
+                        Undergraduate thesis exploring Retrieval-Augmented Generation (RAG) systems. Researching integration between traditional backend systems dan modern AI technologies untuk enhanced information retrieval.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Research</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- Work Experience Column -->
+                <div class="experience-column">
+                    <h3 class="column-title">PROFESSIONAL EXPERIENCE</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 — 2025</div>
+                        <h4 class="timeline-title">Pengurus Inready Workgroup</h4>
+                        <p class="timeline-company">Inready Organization</p>
+                        <p class="timeline-description">
+                            Active member dalam workgroup, berkontribusi pada berbagai web development projects dan technical initiatives. Collaborated dengan team untuk deliver quality solutions.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <h4 class="timeline-title">Backend Developer Intern</h4>
+                        <p class="timeline-company">Metro & Indigo</p>
+                        <p class="timeline-description">
+                            Gained hands-on experience dalam professional development environment. Worked on real-world projects termasuk website MyLab, Inready platform, dan sistem akademik kampus.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 — Present</div>
+                        <h4 class="timeline-title">Freelance Backend Developer</h4>
+                        <p class="timeline-company">Various Clients</p>
+                        <p class="timeline-description">
+                            Developed custom backend solutions untuk diverse clients. Projects include e-commerce APIs, company websites, dan academic management systems.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="experience-column">
+                    <h3 class="column-title">EDUCATION</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 — Present</div>
+                        <h4 class="timeline-title">Bachelor of Informatics Engineering</h4>
+                        <p class="timeline-company">UIN Alauddin Makassar</p>
+                        <p class="timeline-description">
+                            Currently in final semester, focusing on backend development dan system architecture. Thesis topic: Implementation of RAG (Retrieval-Augmented Generation) systems.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ongoing</div>
+                        <h4 class="timeline-title">Self-Learning & Development</h4>
+                        <p class="timeline-company">Continuous Education</p>
+                        <p class="timeline-description">
+                            Actively exploring new technologies including Docker containerization, microservices architecture, cloud platforms, dan AI integration in backend systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-heading">LET'S BUILD SOMETHING TOGETHER</h3>
+                    <p class="contact-description">
+                        Currently open untuk opportunities dalam backend development, system architecture projects, atau interesting collaborations. Jangan ragu untuk reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:wawan@example.com" class="contact-link" aria-label="Email">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">EMAIL</span>
+                                <span class="contact-value">wawan@example.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/wawan" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LINKEDIN</span>
+                                <span class="contact-value">linkedin.com/in/wawan</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/wawan" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">GITHUB</span>
+                                <span class="contact-value">github.com/wawan</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="resume.pdf" download class="btn btn-primary btn-download">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        DOWNLOAD CV/RESUME
+                    </a>
+                </div>
+
+                <div class="contact-visual">
+                    <div class="contact-box">
+                        <div class="contact-pattern"></div>
+                        <div class="contact-quote">
+                            <span class="quote-mark">"</span>
+                            <p>Good code is its own best documentation. As you're about to add a comment, ask yourself, 'How can I improve the code so that this comment isn't needed?'</p>
+                            <span class="quote-author">— Steve McConnell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <h2 class="footer-name">WAWAN</h2>
+                        <p class="footer-tagline">Backend Developer</p>
+                    </div>
+                    <p class="footer-description">
+                        Building robust backend systems dengan passion for clean code dan scalable architecture. Based in Makassar, Indonesia.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">NAVIGATION</h3>
+                        <ul class="footer-list">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title">CONNECT</h3>
+                        <ul class="footer-list">
+                            <li><a href="mailto:wawan@example.com">Email</a></li>
+                            <li><a href="https://linkedin.com/in/wawan" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/wawan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-edition">EDITION: VOL 1.0 | PRINTED IN MAKASSAR, INDONESIA</p>
+                <p class="footer-copyright">© 2025 Wawan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
